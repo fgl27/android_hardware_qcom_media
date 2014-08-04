@@ -7,7 +7,7 @@ LOCAL_SRC_FILES := \
 
 LOCAL_SHARED_LIBRARIES := libutils liblog libdl
 
-LOCAL_HEADER_LIBRARIES := display_headers generated_kernel_headers libstagefright_headers media_plugin_headers
+LOCAL_HEADER_LIBRARIES := display_headers generated_kernel_headers
 
 LOCAL_MODULE_TAGS := optional
 
