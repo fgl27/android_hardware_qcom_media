@@ -5,15 +5,9 @@ include $(CLEAR_VARS)
 LOCAL_SRC_FILES := \
         C2DColorConverter.cpp
 
-LOCAL_C_INCLUDES := \
-    $(TOP)/frameworks/av/include/media/stagefright \
-    $(TOP)/frameworks/native/include/media/openmax \
-    $(TOP)/$(call project-path-for,qcom-display)/libcopybit \
-    $(TARGET_OUT_HEADERS)/qcom/display/
-
 LOCAL_SHARED_LIBRARIES := libutils liblog libdl
 
-LOCAL_HEADER_LIBRARIES := generated_kernel_headers
+LOCAL_HEADER_LIBRARIES := display_headers generated_kernel_headers libstagefright_headers media_plugin_headers
 
 LOCAL_MODULE_TAGS := optional
 
