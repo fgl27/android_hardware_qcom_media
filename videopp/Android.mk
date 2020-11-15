@@ -65,6 +65,7 @@ LOCAL_PRELINK_MODULE    := false
 LOCAL_SHARED_LIBRARIES  := liblog libutils libbinder libcutils libdl libc
 
 LOCAL_SRC_FILES         += src/omx_vdpp.cpp
+LOCAL_HEADER_LIBRARIES  := display_headers media_headers
 
 LOCAL_ADDITIONAL_DEPENDENCIES  := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
 
